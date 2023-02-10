@@ -2,6 +2,7 @@ const TOP = document.querySelector('.go_top');
 const HD = document.querySelector('#header');
 
 new Swiper('.mainVisual .swiper', {
+    // direction: "vertical",
     loop: true,
     autoplay: true,
     speed: 5000,
@@ -57,7 +58,7 @@ const TIT = ['Onshore', 'Offshore', 'CS BEARING', 'CS ENERGY'];
 new Swiper('.mainESG .swiper', {
     loop: true,
     autoplay: true,
-    speed: 5000,
+    speed: 1000,
     pagination: {
         el: ".swiper-dots",
         clickable: true,
@@ -65,4 +66,13 @@ new Swiper('.mainESG .swiper', {
             return '<span class="' + className + '">' + TIT[index] + "</span>";
         },
     },
+    effect: 'fade',
 });
+
+TOP.addEventListener('click', () => {
+    fullpage_api.moveTo(1);
+});
+
+
+
+

@@ -231,7 +231,9 @@
 
 
 
-
+/* .mainVisual {
+    overflow: hidden;
+} */
 
 
 .mainVisual .swiper {
@@ -717,18 +719,20 @@
 }
 
 .mainNews .more {
-    display: flex;
-    justify-content: center;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
 
-    width: 230px;
-
+    width: 250px;
+    border-radius: 10px;
     background: #0085ff;
-    text-align: center;
-    border-radius: 5px;
+}
+
+.mainNews .more>a {
+    display: flex;
+
+    width: 100%;
 }
 
 .mainNews .more span {
@@ -737,12 +741,14 @@
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
+
+    margin: 0 0 0 60px;
 }
 
 .mainNews .more img {
     width: 15px;
     height: 15px;
-    margin-left: 70px;
+    margin: 0 0 0 60px;
 }
 
 
